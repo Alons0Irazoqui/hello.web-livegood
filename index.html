@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
   <!-- ═══ SEO TÉCNICO ═══ -->
   <title>Dr. Justiniano Blanco y Palomo | Pensión Residual con LiveGood — Ebook Gratis</title>
@@ -19,37 +19,15 @@
   <meta name="twitter:card"       content="summary_large_image">
 
   <!-- ═══ RECURSOS EXTERNOS ═══ -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:ital,wght@0,500;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- ═══ TAILWIND CONFIG ═══ -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            serif: ['Fraunces', 'serif'],
-          },
-          colors: {
-            brand: {
-              green:      '#146C43',
-              greenDark:  '#0B3324',
-              greenLight: '#2E9E5B',
-              navy:       '#0D1F17',
-              gold:       '#C9A24B',
-              goldLight:  '#E4CD8F',
-              cream:      '#F8F6F0',
-              ink:        '#14201A',
-            }
-          }
-        }
-      }
-    }
-  </script>
-
   <link rel="stylesheet" href="style.css">
+  <noscript><style>#page-loader,#loader-wipe{display:none!important}</style></noscript>
 </head>
 
 <body class="font-sans text-brand-ink bg-brand-cream">
@@ -134,7 +112,11 @@
 
       <div class="hero-bg" aria-hidden="true">
         <img src="https://images.unsplash.com/photo-1750246955242-bb9ddfa1b7bb?auto=format&fit=crop&w=1800&q=80"
-             alt="" class="hero-bg-img" data-parallax data-parallax-speed="0.25">
+             srcset="https://images.unsplash.com/photo-1750246955242-bb9ddfa1b7bb?auto=format&fit=crop&w=800&q=70 800w,
+                     https://images.unsplash.com/photo-1750246955242-bb9ddfa1b7bb?auto=format&fit=crop&w=1200&q=75 1200w,
+                     https://images.unsplash.com/photo-1750246955242-bb9ddfa1b7bb?auto=format&fit=crop&w=1800&q=80 1800w"
+             sizes="100vw"
+             alt="" class="hero-bg-img" data-parallax data-parallax-speed="0.25" fetchpriority="high">
         <div class="hero-bg-overlay"></div>
         <canvas id="hero-canvas"></canvas>
         <div class="hero-orb orb-a"></div>
@@ -248,6 +230,10 @@
 
         <div class="banner-photo" data-reveal>
           <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80"
+             srcset="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=70 800w,
+                     https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=75 1200w,
+                     https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80 1600w"
+             sizes="100vw"
                alt="Apretón de manos entre dos profesionales cerrando un acuerdo de confianza"
                class="banner-photo-img" data-parallax data-parallax-speed="0.15" loading="lazy">
           <div class="banner-photo-overlay">
@@ -272,6 +258,10 @@
 
         <div class="banner-photo mb-14" data-reveal>
           <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=80"
+             srcset="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=70 800w,
+                     https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1200&q=75 1200w,
+                     https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1600&q=80 1600w"
+             sizes="100vw"
                alt="Billetes de dólar estadounidense extendidos, representando el ingreso residual de LiveGood"
                class="banner-photo-img" data-parallax data-parallax-speed="0.15" loading="lazy">
           <div class="banner-photo-overlay">
@@ -293,8 +283,8 @@
             <h3>Plan de Compensación</h3>
             <p>Matriz forzada <strong>2×15 niveles</strong> con una pensión base de <strong>$2,047.50 USD en 5 años</strong>, solo por mantenerte activo, sin necesidad de invitar a nadie más.</p>
             <ul class="offer-bonus-list">
-              <li><i class="fa-solid fa-bolt"></i> Bono rápido: <strong>$25 USD</strong> por cada inscripción, al infinito.</li>
-              <li><i class="fa-solid fa-scale-balanced"></i> Bono de igualación: la empresa iguala al <strong>50%</strong> lo que generan tus directos.</li>
+              <li><i class="fa-solid fa-bolt"></i> <span>Bono rápido: <strong>$25 USD</strong> por cada inscripción, al infinito.</span></li>
+              <li><i class="fa-solid fa-scale-balanced"></i> <span>Bono de igualación: la empresa iguala al <strong>50%</strong> lo que generan tus directos.</span></li>
             </ul>
             <a href="#rangos" class="offer-link">Ver rangos y pensiones <i class="fa-solid fa-arrow-right"></i></a>
           </article>
@@ -425,6 +415,10 @@
 
         <div class="banner-photo mb-14" data-reveal>
           <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1600&q=80"
+             srcset="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=70 800w,
+                     https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=75 1200w,
+                     https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1600&q=80 1600w"
+             sizes="100vw"
                alt="Dos compañeros de oficina celebrando un logro con un choque de manos"
                class="banner-photo-img" data-parallax data-parallax-speed="0.15" loading="lazy">
           <div class="banner-photo-overlay">
@@ -546,6 +540,10 @@
 
         <div class="banner-photo mt-14" data-reveal>
           <img src="https://images.unsplash.com/photo-1579532536935-619928decd08?auto=format&fit=crop&w=1600&q=80"
+             srcset="https://images.unsplash.com/photo-1579532536935-619928decd08?auto=format&fit=crop&w=800&q=70 800w,
+                     https://images.unsplash.com/photo-1579532536935-619928decd08?auto=format&fit=crop&w=1200&q=75 1200w,
+                     https://images.unsplash.com/photo-1579532536935-619928decd08?auto=format&fit=crop&w=1600&q=80 1600w"
+             sizes="100vw"
                alt="Periódicos con la sección de negocios sobre una mesa de madera"
                class="banner-photo-img" data-parallax data-parallax-speed="0.15" loading="lazy">
           <div class="banner-photo-overlay">
@@ -644,6 +642,10 @@
     ══════════════════════════════════════════ -->
     <section class="final-cta" aria-label="Llamada a la acción final">
       <img src="https://images.unsplash.com/photo-1608501078713-8e445a709b39?auto=format&fit=crop&w=1800&q=80"
+             srcset="https://images.unsplash.com/photo-1608501078713-8e445a709b39?auto=format&fit=crop&w=800&q=70 800w,
+                     https://images.unsplash.com/photo-1608501078713-8e445a709b39?auto=format&fit=crop&w=1200&q=75 1200w,
+                     https://images.unsplash.com/photo-1608501078713-8e445a709b39?auto=format&fit=crop&w=1800&q=80 1800w"
+             sizes="100vw"
            alt="" class="final-cta-bg" data-parallax data-parallax-speed="0.2">
       <div class="final-cta-overlay"></div>
       <div class="final-cta-inner" data-reveal>
